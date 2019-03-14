@@ -15,6 +15,7 @@
 		35E1557222390C8900F6C1C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E1557122390C8900F6C1C3 /* main.m */; };
 		35E1557C22390C8900F6C1C3 /* DKProjectDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E1557B22390C8900F6C1C3 /* DKProjectDemoTests.m */; };
 		35E1558722390C8900F6C1C3 /* DKProjectDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E1558622390C8900F6C1C3 /* DKProjectDemoUITests.m */; };
+		4BA8ABC80F964D866ADA8B38 /* libPods-DKProjectDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 082FAF981851BB7D22A0459A /* libPods-DKProjectDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		082FAF981851BB7D22A0459A /* libPods-DKProjectDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DKProjectDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11B671076F5CD08F8E801765 /* Pods-DKProjectDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DKProjectDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DKProjectDemo/Pods-DKProjectDemo.release.xcconfig"; sourceTree = "<group>"; };
 		35E1555F22390C8700F6C1C3 /* DKProjectDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DKProjectDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35E1556222390C8700F6C1C3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		35E1556322390C8700F6C1C3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		35E1558222390C8900F6C1C3 /* DKProjectDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DKProjectDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		35E1558622390C8900F6C1C3 /* DKProjectDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKProjectDemoUITests.m; sourceTree = "<group>"; };
 		35E1558822390C8900F6C1C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE2FC6563792C21BE0E03AC9 /* Pods-DKProjectDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DKProjectDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DKProjectDemo/Pods-DKProjectDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BA8ABC80F964D866ADA8B38 /* libPods-DKProjectDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30E383493B85E2AC131152FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE2FC6563792C21BE0E03AC9 /* Pods-DKProjectDemo.debug.xcconfig */,
+				11B671076F5CD08F8E801765 /* Pods-DKProjectDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		35E1555622390C8700F6C1C3 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +99,8 @@
 				35E1557A22390C8900F6C1C3 /* DKProjectDemoTests */,
 				35E1558522390C8900F6C1C3 /* DKProjectDemoUITests */,
 				35E1556022390C8700F6C1C3 /* Products */,
+				30E383493B85E2AC131152FC /* Pods */,
+				F652C03F519296F81E6C7575 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +148,14 @@
 			path = DKProjectDemoUITests;
 			sourceTree = "<group>";
 		};
+		F652C03F519296F81E6C7575 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				082FAF981851BB7D22A0459A /* libPods-DKProjectDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 35E1558B22390C8900F6C1C3 /* Build configuration list for PBXNativeTarget "DKProjectDemo" */;
 			buildPhases = (
+				14F3A7BC8ED15A82D0D14DBE /* [CP] Check Pods Manifest.lock */,
 				35E1555B22390C8700F6C1C3 /* Sources */,
 				35E1555C22390C8700F6C1C3 /* Frameworks */,
 				35E1555D22390C8700F6C1C3 /* Resources */,
+				5913A19A3439BB33D1F22291 /* [CP] Embed Pods Frameworks */,
+				D3B4E66C900AD48F34FFC388 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +283,66 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14F3A7BC8ED15A82D0D14DBE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DKProjectDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5913A19A3439BB33D1F22291 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DKProjectDemo/Pods-DKProjectDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3B4E66C900AD48F34FFC388 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DKProjectDemo/Pods-DKProjectDemo-resources.sh",
+				"${PODS_ROOT}/BRPickerView/BRPickerView/AddressPickerView/BRPickerView.bundle",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BRPickerView.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TZImagePickerController.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DKProjectDemo/Pods-DKProjectDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		35E1555B22390C8700F6C1C3 /* Sources */ = {
@@ -433,15 +520,13 @@
 		};
 		35E1558C22390C8900F6C1C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE2FC6563792C21BE0E03AC9 /* Pods-DKProjectDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TFW7NDYC5Z;
 				INFOPLIST_FILE = DKProjectDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dake.DKProjectDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -450,15 +535,13 @@
 		};
 		35E1558D22390C8900F6C1C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11B671076F5CD08F8E801765 /* Pods-DKProjectDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TFW7NDYC5Z;
 				INFOPLIST_FILE = DKProjectDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dake.DKProjectDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -472,11 +555,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TFW7NDYC5Z;
 				INFOPLIST_FILE = DKProjectDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dake.DKProjectDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -491,11 +570,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TFW7NDYC5Z;
 				INFOPLIST_FILE = DKProjectDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dake.DKProjectDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -509,11 +584,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TFW7NDYC5Z;
 				INFOPLIST_FILE = DKProjectDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dake.DKProjectDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -527,11 +598,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TFW7NDYC5Z;
 				INFOPLIST_FILE = DKProjectDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dake.DKProjectDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

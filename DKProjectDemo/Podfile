@@ -1,0 +1,27 @@
+platform:ios,'10.0'
+target 'DKProjectDemo' do
+    inhibit_all_warnings!#禁止报错
+
+pod 'AFNetworking'#网络请求
+pod 'MJRefresh'#刷新
+pod 'SDWebImage'#图片加载
+pod 'SDWebImage/GIF'#GIF图片加载
+pod 'Masonry'#布局
+pod 'MBProgressHUD'#菊花
+pod 'ReactiveObjC'#响应式编程
+pod 'YYModel'#数据模型
+pod 'YYText'#富文本
+pod 'NullSafe'#nil判断/转换
+pod 'IQKeyboardManager'#键盘 3.0.2版本无私有api
+pod 'CYLTabBarController'#tabbar控件
+pod 'JSBadgeView'# 未读消息显示数字加圆圈
+pod 'FDFullscreenPopGesture'# 全局滑动
+pod 'SDCycleScrollView'#轮播图
+pod 'NJKWebViewProgress'#进度条
+pod 'TZImagePickerController'#照片选择器
+pod 'JCAlertController'#弹窗替代AlertController
+pod 'LYEmptyView'#为空页面
+pod 'BRPickerView'#时间选择
+#pod 'SJVideoPlayer'#视频播放
+
+end
