@@ -1,14 +1,15 @@
 //
-//  BaseCommonTool.m
+//  CommonTool.m
 //  ZLBProject
 //
 //  Created by 刘雨奇 on 2017/8/12.
 //  Copyright © 2017年 刘雨奇. All rights reserved.
 //
 
-#import "BaseCommonTool.h"
+#import "CommonTool.h"
 #import "GTMBase64.h"
 #import "NSData+AES.h"
+#import "NSString+Extension.h"
 #import <ifaddrs.h>
 #import <arpa/inet.h>
 #include <ifaddrs.h>
@@ -24,7 +25,7 @@ static float G_uiWidthRate = .0f; // 获取屏幕宽度比例
 static float G_uiFontRate = 0.f;  // 获取字体大小比例
 
 
-@implementation BaseCommonTool
+@implementation CommonTool
 
 //NSUserDefaults本地存储
 + (void)saveOfUserDefaults:(id)value forKey:(NSString *)key{
@@ -708,12 +709,13 @@ static float G_uiFontRate = 0.f;  // 获取字体大小比例
     }
     return G_uiFontRate;
 }
-//+(float)getStrWidth:(NSString*)str withFontSize:(float)size
-//{
-//    CGSize textMaxSize = CGSizeMake(screenWidth, MAXFLOAT);
-//    CGSize textRealSize = [str sizeWithFont:[UIFont systemFontOfSize:size] maxSize:textMaxSize];
-//    return textRealSize.width;
-//}
+
++(float)getStrWidth:(NSString*)str withFontSize:(float)size
+{
+    CGSize textMaxSize = CGSizeMake(screenWidth, MAXFLOAT);
+    CGSize textRealSize = [str sizeWithFont:[UIFont systemFontOfSize:size] maxSize:textMaxSize];
+    return textRealSize.width;
+}
 
 
 + (NSString *)hexStringFromString:(NSString *)string{
@@ -781,12 +783,12 @@ static float G_uiFontRate = 0.f;  // 获取字体大小比例
     return size.height;
 }
 
-+ (void)scheduledTimerWithTimeInterval:(NSTimeInterval)interval CompletionBlock:(void (^)(BaseCommonTool *tool))block
++ (void)scheduledTimerWithTimeInterval:(NSTimeInterval)interval CompletionBlock:(void (^)(CommonTool *tool))block
 {
     if (@available(iOS 10.0, *)) {
         [NSTimer scheduledTimerWithTimeInterval:interval repeats:NO block:^(NSTimer * _Nonnull timer) {
             if (block) {
-                BaseCommonTool *tool = [[BaseCommonTool alloc]init];
+                CommonTool *tool = [[CommonTool alloc]init];
                 block(tool);
             }
         }];

@@ -20,7 +20,6 @@
 @property NSString *province;//省份
 @property NSString *city;//城市
 @property NSString *region;//地区
-@property NSString *node;//所属的组织id，创建扩展群的时候需要添加此id
 
 //写入本地
 -(void)writeToLocal;

@@ -8,7 +8,7 @@
 
 #import "AINetworkEngine.h"
 #import "CommonMacro.h"
-#import "BaseCommonTool.h"
+#import "CommonTool.h"
 //#import "UserTokenModel.h"
 
 @implementation AINetworkEngine
@@ -225,7 +225,7 @@
                 imgBresWidth = photo.size.width * imgBresHeight / photo.size.height;
             }
 
-            UIImage *imgBres = [BaseCommonTool imageByScalingAndCroppingForSize:CGSizeMake(imgBresWidth, imgBresHeight) withSourceImage:photo];
+            UIImage *imgBres = [CommonTool imageByScalingAndCroppingForSize:CGSizeMake(imgBresWidth, imgBresHeight) withSourceImage:photo];
 
             NSData *imgBresPNGData = UIImagePNGRepresentation(imgBres);
             NSData *imgBresJPEGData = UIImageJPEGRepresentation(imgBres, 1.0);
@@ -281,7 +281,7 @@
     NSString *pathToMovie = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/Movie4.mp4"];
     
     //上传图片
-    UIImage *image = [BaseCommonTool getVideoPreViewImage:[NSURL fileURLWithPath:pathToMovie]];
+    UIImage *image = [CommonTool getVideoPreViewImage:[NSURL fileURLWithPath:pathToMovie]];
 
     NSData *imagePNGData = UIImagePNGRepresentation(image);
     NSData *imageJPEGData = UIImageJPEGRepresentation(image, 1.0);

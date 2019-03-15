@@ -1,5 +1,5 @@
 //
-//  BaseCommonTool.h
+//  CommonTool.h
 //  ZLBProject
 //
 //  Created by 刘雨奇 on 2017/8/12.
@@ -20,7 +20,7 @@ typedef NS_ENUM(NSInteger, NetWorkStatus) {
 
 typedef void(^cleanCacheBlock)(void);
 
-@interface BaseCommonTool : NSObject
+@interface CommonTool : NSObject
 
 #pragma mark - NSUserDefaults本地存储
 + (void)saveOfUserDefaults:(id)value forKey:(NSString *)key;
@@ -54,7 +54,7 @@ typedef void(^cleanCacheBlock)(void);
 +(BOOL)isStandardMail:(NSString *) mail;
 
 #pragma mark NSTimer封装
-+ (void)scheduledTimerWithTimeInterval:(NSTimeInterval)interval CompletionBlock:(void (^)(BaseCommonTool *tool))block;
++ (void)scheduledTimerWithTimeInterval:(NSTimeInterval)interval CompletionBlock:(void (^)(CommonTool *tool))block;
 
 #pragma mark 清理缓存
 +(void)cleanCache:(cleanCacheBlock)block;
