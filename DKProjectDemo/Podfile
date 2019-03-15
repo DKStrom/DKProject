@@ -10,6 +10,7 @@ pod 'Masonry'#布局
 pod 'MBProgressHUD'#菊花
 pod 'ReactiveObjC'#响应式编程
 pod 'YYModel'#数据模型
+pod 'MJExtension'#NSString扩展
 pod 'YYText'#富文本
 pod 'NullSafe'#nil判断/转换
 pod 'IQKeyboardManager'#键盘 3.0.2版本无私有api
