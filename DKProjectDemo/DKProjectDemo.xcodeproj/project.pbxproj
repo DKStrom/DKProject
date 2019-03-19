@@ -22,6 +22,7 @@
 		35951C68223B938B003354B3 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35951C67223B938B003354B3 /* BaseNavigationController.m */; };
 		35951C6B223B93C0003354B3 /* UIView+DKRoundedCorners.m in Sources */ = {isa = PBXBuildFile; fileRef = 35951C6A223B93C0003354B3 /* UIView+DKRoundedCorners.m */; };
 		35951C6E223B9405003354B3 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 35951C6D223B9404003354B3 /* NSString+Extension.m */; };
+		35BCCFAC2240DB570033FFD1 /* 方正粗谭黑简体.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 35BCCFAB2240DB570033FFD1 /* 方正粗谭黑简体.TTF */; };
 		35E1556422390C8700F6C1C3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E1556322390C8700F6C1C3 /* AppDelegate.m */; };
 		35E1556722390C8700F6C1C3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E1556622390C8700F6C1C3 /* ViewController.m */; };
 		35E1556A22390C8700F6C1C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35E1556822390C8700F6C1C3 /* Main.storyboard */; };
@@ -86,6 +87,7 @@
 		35951C6A223B93C0003354B3 /* UIView+DKRoundedCorners.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DKRoundedCorners.m"; sourceTree = "<group>"; };
 		35951C6C223B9404003354B3 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
 		35951C6D223B9404003354B3 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		35BCCFAB2240DB570033FFD1 /* 方正粗谭黑简体.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "方正粗谭黑简体.TTF"; sourceTree = "<group>"; };
 		35E1555F22390C8700F6C1C3 /* DKProjectDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DKProjectDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35E1556222390C8700F6C1C3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		35E1556322390C8700F6C1C3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 		3576CC1A223A5568003D21F8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				35BCCFAA2240DB570033FFD1 /* font */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -261,6 +264,14 @@
 				35951C5B223B8B88003354B3 /* GTMBase64.m */,
 			);
 			path = Base64;
+			sourceTree = "<group>";
+		};
+		35BCCFAA2240DB570033FFD1 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				35BCCFAB2240DB570033FFD1 /* 方正粗谭黑简体.TTF */,
+			);
+			path = font;
 			sourceTree = "<group>";
 		};
 		35E1555622390C8700F6C1C3 = {
@@ -442,6 +453,7 @@
 				35E1556F22390C8900F6C1C3 /* LaunchScreen.storyboard in Resources */,
 				35E1556C22390C8900F6C1C3 /* Assets.xcassets in Resources */,
 				35E1556A22390C8700F6C1C3 /* Main.storyboard in Resources */,
+				35BCCFAC2240DB570033FFD1 /* 方正粗谭黑简体.TTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
